@@ -1,0 +1,46 @@
+:root {
+    --headerbar-height: 44px;
+    --window-icons-margin: 84px;
+}
+
+#TabsToolbar { 
+    visibility: collapse !important;
+}
+
+#navigator-toolbox {
+    background: transparent !important;
+    margin-right: var( --window-icons-margin);
+    margin-left: calc(var(--headerbar-height)*0.2);
+}
+
+#sidebar-header {
+    display: none;
+}
+
+toolbar#nav-bar {
+    height: var(--headerbar-height);
+    background: transparent !important;
+}
+
+#titlebar-content {
+    height: var(--headerbar-height);
+}
+#titlebar {
+    margin-bottom: calc(var(--headerbar-height)*-1) !important;
+}
+
+#navigator-toolbox::after { display: none !important; }
+
+#pageActionButton, #pageActionSeparator { display: none !important; }
+
+toolbox textbox {
+    border-radius: 4px !important;
+}
+
+
+.sidebar-splitter {
+    border: 0 !important;
+    -moz-appearance: unset !important;
+    background-color: ThreeDShadow !important;
+    opacity: 0.1;
+}

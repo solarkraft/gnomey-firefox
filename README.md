@@ -5,7 +5,7 @@ A Firefox userChrome.css giving it a header bar and preparing for tree-style tab
 
 The file userChrome.css goes into the chrome folder of your Firefox profile, in my case the full path is `/home/paul/.mozilla/firefox/fj57j7ew.default/chrome/userChrome.css` (you will likely need to create the chrome folder).
 
-The tab management extension of choice is the great [Tree Style Tab](https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/) by[Piro](https://piro.sakura.ne.jp/) in the Vertigo theme and with a hidden scroll bar. 
+The tab management extension of choice is the great [Tree Style Tab](https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/) by [Piro](https://piro.sakura.ne.jp/) in the Vertigo theme and with a hidden scroll bar. 
 
 Since this is hacked-together, if you have a different window button configuration than me you'll have to change the margins a bit. 
 

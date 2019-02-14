@@ -1,46 +1,64 @@
-:root {
-    --headerbar-height: 44px;
-    --window-icons-margin: 84px;
-}
-
-#TabsToolbar { 
-    visibility: collapse !important;
-}
+/* New version for new Firefox 65 */
 
 #navigator-toolbox {
-    background: transparent !important;
-    margin-right: var( --window-icons-margin);
-    margin-left: calc(var(--headerbar-height)*0.2);
+    --headerbar-height: 48px;
+    --navbar-height: var(--headerbar-height);
+    --background: 
+            linear-gradient(rgb(245, 245, 245), rgb(218, 218, 218));
+    
+    /*collapse tab bar*/
+    margin-top: calc(var(--headerbar-height) *(-1));
+
+    background: var(--background);
+
+    padding-left: 1em;
+    padding-right: 0.5em;
 }
 
-#sidebar-header {
+#tabbrowser-tabs {
     display: none;
 }
-
-toolbar#nav-bar {
+  
+#titlebar {
     height: var(--headerbar-height);
+}
+  
+#nav-bar {
+    height: var(--navbar-height);
+    margin-right: 88px;
     background: transparent !important;
 }
 
-#titlebar-content {
-    height: var(--headerbar-height);
-}
-#titlebar {
-    margin-bottom: calc(var(--headerbar-height)*-1) !important;
+.titlebar-buttonbox {
+    transform: translateY(var(--headerbar-height));
 }
 
+/* other fixes */
+* {
+  transition: 0.5s;
+}
+*:hover {
+  transition: 0.1s;
+}
+  
 #navigator-toolbox::after { display: none !important; }
-
+  
 #pageActionButton, #pageActionSeparator { display: none !important; }
-
+  
 toolbox textbox {
     border-radius: 4px !important;
 }
-
-
+  
 .sidebar-splitter {
     border: 0 !important;
     -moz-appearance: unset !important;
     background-color: ThreeDShadow !important;
     opacity: 0.1;
+}
+.sidebar-splitter:hover {
+    opacity: 0.5;
+}
+
+#sidebar-header {
+    display: none;
 }

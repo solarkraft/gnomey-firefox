@@ -14,10 +14,6 @@
     padding-left: 1em;
     padding-right: 0.5em;
 }
-
-#tabbrowser-tabs {
-    display: none;
-}
   
 #titlebar {
     height: var(--headerbar-height);
